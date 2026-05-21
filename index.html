@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DTverse portfolio by Devendra Tiwari — web development, Python, Android development, realtime apps, edtech tools, and digital products.">
+    <title>DTverse | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background-container">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="grid-overlay"></div>
+        <div class="noise-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">DTverse</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#building" class="nav-link">Building</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#building" class="mobile-link">Building</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <div class="hero-badge animate-on-scroll">
+                    <span class="badge-dot"></span>
+                    <span>Available for projects</span>
+                </div>
+                <h1 class="hero-title animate-on-scroll">
+                    I build <span class="gradient-text">web apps</span>, Android ideas, Python tools, and digital products.
+                </h1>
+                <p class="hero-subtitle animate-on-scroll">
+                    Welcome to DTverse — my personal build space for web development, Android development, Python experiments, learning platforms, and creative digital products.
+                </p>
+                <div class="hero-cta animate-on-scroll">
+                    <a href="#projects" class="btn btn-primary magnetic-btn">
+                        <span>View Projects</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary magnetic-btn">
+                        <span>Contact Me</span>
+                    </a>
+                </div>
+                <div class="hero-cards">
+                    <div class="hero-card glass-card animate-on-scroll tilt-card" data-delay="200">
+                        <div class="card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                <polyline points="2 17 12 22 22 17"></polyline>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Responsive, modern interfaces with clean frontend logic</p>
+                    </div>
+                    <div class="hero-card glass-card animate-on-scroll tilt-card" data-delay="400">
+                        <div class="card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                            </svg>
+                        </div>
+                        <h3>Android Development</h3>
+                        <p>App ideas, APK projects, and mobile-first product thinking</p>
+                    </div>
+                    <div class="hero-card glass-card animate-on-scroll tilt-card" data-delay="600">
+                        <div class="card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                            </svg>
+                        </div>
+                        <h3>Python Skills</h3>
+                        <p>Automation, scripts, logic building, and practical tools</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span>Scroll to explore</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="section-container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-tag">About</span>
+                    <h2 class="section-title">A bit about me</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text animate-on-scroll">
+                        <div class="about-card glass-card">
+                            <p class="about-lead">
+                                I&apos;m Devendra, building under the DTverse brand — a personal space where I turn ideas into real, working products that people can actually use.
+                            </p>
+                            <p>
+                                My journey started with curiosity about how websites work, which quickly evolved into a passion for building interactive web applications. I specialize in <strong>web development</strong>, <strong>Python</strong>, and <strong>Android development</strong>, with a focus on practical products and realtime experiences.
+                            </p>
+                            <p>
+                                Using <strong>Supabase</strong> as my backend of choice, I&apos;ve built everything from anonymous chatrooms with presence indicators to comprehensive learning platforms with teacher dashboards. I believe great software should feel intuitive and respond instantly.
+                            </p>
+                            <p>
+                                Beyond code, I&apos;m deeply interested in <strong>UI/UX design</strong> and how thoughtful interfaces can make complex tools accessible. My work in <strong>edtech</strong> combines these interests—creating study tools, planners, and platforms that help students learn more effectively.
+                            </p>
+                            <div class="about-highlights">
+                                <div class="highlight-item">
+                                    <span class="highlight-number">3+</span>
+                                    <span class="highlight-label">Major Projects</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-number">∞</span>
+                                    <span class="highlight-label">Curiosity</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-number">24/7</span>
+                                    <span class="highlight-label">Building</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual animate-on-scroll">
+                        <div class="visual-stack">
+                            <div class="stack-item glass-card">
+                                <div class="stack-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                                    </svg>
+                                </div>
+                                <span>Frontend First</span>
+                            </div>
+                            <div class="stack-item glass-card">
+                                <div class="stack-icon supabase">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M11.9 1.036c-.015-.986-1.26-1.41-1.874-.637L.764 12.05C-.033 13.002.618 14.467 1.835 14.467h6.508v8.497c0 .986 1.26 1.41 1.874.637l9.262-11.653c.797-.951.146-2.416-1.071-2.416h-6.508V1.036z"/>
+                                    </svg>
+                                </div>
+                                <span>Supabase Powered</span>
+                            </div>
+                            <div class="stack-item glass-card">
+                                <div class="stack-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M2 12h20"></path>
+                                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                    </svg>
+                                </div>
+                                <span>Realtime Focus</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="section-container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-tag">Work</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Real DTverse projects, tools, experiments, and live builds.</p>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card glass-card animate-on-scroll tilt-card" data-delay="100">
+                        <div class="project-header">
+                            <div class="project-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h8l-1 8 10-12h-8l1-8z"></path></svg></div>
+                            <div class="project-status"><span class="status-dot live"></span><span>Live</span></div>
+                        </div>
+                        <h3 class="project-title">DTalk</h3>
+                        <p class="project-description">Realtime anonymous chatroom with room codes, live presence, typing status, and file sharing for quick private conversations.</p>
+                        <div class="project-features"><span class="feature-chip">Room Codes</span><span class="feature-chip">Presence</span><span class="feature-chip">Typing</span><span class="feature-chip">File Sharing</span></div>
+                        <div class="project-tech"><span class="tech-tag">Supabase</span><span class="tech-tag">Realtime</span><span class="tech-tag">JavaScript</span></div>
+                        <div class="project-actions">
+                            <a href="https://dtalkk.netlify.app" target="_blank" rel="noopener" class="btn btn-sm btn-primary magnetic-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg><span>Live Demo</span></a>
+                            <a href="https://github.com/devendra-tiwari" target="_blank" rel="noopener" class="btn btn-sm btn-ghost magnetic-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg><span>GitHub</span></a>
+                        </div>
+                    </article>
+                    <article class="project-card glass-card animate-on-scroll tilt-card" data-delay="200">
+                        <div class="project-header">
+                            <div class="project-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h8l-1 8 10-12h-8l1-8z"></path></svg></div>
+                            <div class="project-status"><span class="status-dot live"></span><span>Live</span></div>
+                        </div>
+                        <h3 class="project-title">Rasayan Shala</h3>
+                        <p class="project-description">Chemistry learning platform with teacher and student flows, course management, video lectures, notes, and dashboard-style learning.</p>
+                        <div class="project-features"><span class="feature-chip">Teacher Panel</span><span class="feature-chip">Student Portal</span><span class="feature-chip">Courses</span><span class="feature-chip">Notes</span></div>
+                        <div class="project-tech"><span class="tech-tag">Supabase</span><span class="tech-tag">Auth</span><span class="tech-tag">Storage</span><span class="tech-tag">EdTech</span></div>
+                        <div class="project-actions">
+                            <a href="https://rasayanshala.netlify.app" target="_blank" rel="noopener" class="btn btn-sm btn-primary magnetic-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg><span>Live Demo</span></a>
+                            <a href="https://github.com/devendra-tiwari" target="_blank" rel="noopener" class="btn btn-sm btn-ghost magnetic-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg><span>GitHub</span></a>
+                        </div>
+                    </article>
+                    <article class="project-card glass-card animate-on-scroll tilt-card" data-delay="300">
+                        <div class="project-header">
+                            <div class="project-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h8l-1 8 10-12h-8l1-8z"></path></svg></div>
+                            <div class="project-status"><span class="status-dot live"></span><span>Live</span></div>
+                        </div>
+                        <h3 class="project-title">DHabbit Study Tools</h3>
+                        <p class="project-description">Student productivity toolkit for planning, habit tracking, checklists, and study discipline workflows.</p>
+                        <div class="project-features"><span class="feature-chip">Planner</span><span class="feature-chip">Habits</span><span class="feature-chip">Checklist</span><span class="feature-chip">Study Tools</span></div>
+                        <div class="project-tech"><span class="tech-tag">JavaScript</span><span class="tech-tag">Local Storage</span><span class="tech-tag">PWA</span></div>
+                        <div class="project-actions">
+                            <a href="https://dhabbit.netlify.app" target="_blank" rel="noopener" class="btn btn-sm btn-primary magnetic-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg><span>Live Demo</span></a>
+                            <a href="https://github.com/devendra-tiwari" target="_blank" rel="noopener" class="btn btn-sm btn-ghost magnetic-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg><span>GitHub</span></a>
+                        </div>
+                    </article>
+                    <article class="project-card glass-card animate-on-scroll tilt-card" data-delay="400">
+                        <div class="project-header">
+                            <div class="project-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h8l-1 8 10-12h-8l1-8z"></path></svg></div>
+                            <div class="project-status"><span class="status-dot live"></span><span>Live</span></div>
+                        </div>
+                        <h3 class="project-title">DTverse Portfolio</h3>
+                        <p class="project-description">This portfolio website itself — an editable personal brand hub for projects, skills, links, contact, and future downloads.</p>
+                        <div class="project-features"><span class="feature-chip">Portfolio</span><span class="feature-chip">Brand Hub</span><span class="feature-chip">Editable</span><span class="feature-chip">Projects</span></div>
+                        <div class="project-tech"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span></div>
+                        <div class="project-actions">
+                            <a href="https://dtverseofficial.netlify.app" target="_blank" rel="noopener" class="btn btn-sm btn-primary magnetic-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg><span>Live Demo</span></a>
+                            <a href="https://github.com/devendra-tiwari" target="_blank" rel="noopener" class="btn btn-sm btn-ghost magnetic-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg><span>GitHub</span></a>
+                        </div>
+                    </article>
+                    <article class="project-card glass-card animate-on-scroll tilt-card" data-delay="500">
+                        <div class="project-header">
+                            <div class="project-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h8l-1 8 10-12h-8l1-8z"></path></svg></div>
+                            <div class="project-status"><span class="status-dot live"></span><span>Live</span></div>
+                        </div>
+                        <h3 class="project-title">DSlide</h3>
+                        <p class="project-description">Drawing and notes website idea with auto-enhancer direction for cleaner handwritten notes and visual study material.</p>
+                        <div class="project-features"><span class="feature-chip">Drawing</span><span class="feature-chip">Notes</span><span class="feature-chip">Enhancer</span><span class="feature-chip">S Pen Idea</span></div>
+                        <div class="project-tech"><span class="tech-tag">Canvas</span><span class="tech-tag">JavaScript</span><span class="tech-tag">UI/UX</span></div>
+                        <div class="project-actions">
+                            <a href="https://dslide.netlify.app" target="_blank" rel="noopener" class="btn btn-sm btn-primary magnetic-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg><span>Live Demo</span></a>
+                            <a href="https://github.com/devendra-tiwari" target="_blank" rel="noopener" class="btn btn-sm btn-ghost magnetic-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg><span>GitHub</span></a>
+                        </div>
+                    </article>
+                    <article class="project-card glass-card animate-on-scroll tilt-card" data-delay="600">
+                        <div class="project-header">
+                            <div class="project-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h8l-1 8 10-12h-8l1-8z"></path></svg></div>
+                            <div class="project-status"><span class="status-dot live"></span><span>Live</span></div>
+                        </div>
+                        <h3 class="project-title">DDiscipline</h3>
+                        <p class="project-description">Task and checklist website for adding daily tasks, tracking discipline, and keeping routines simple.</p>
+                        <div class="project-features"><span class="feature-chip">Tasks</span><span class="feature-chip">Checklist</span><span class="feature-chip">Routine</span><span class="feature-chip">Focus</span></div>
+                        <div class="project-tech"><span class="tech-tag">JavaScript</span><span class="tech-tag">Productivity</span><span class="tech-tag">Responsive</span></div>
+                        <div class="project-actions">
+                            <a href="https://ddiscipline.netlify.app" target="_blank" rel="noopener" class="btn btn-sm btn-primary magnetic-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg><span>Live Demo</span></a>
+                            <a href="https://github.com/devendra-tiwari" target="_blank" rel="noopener" class="btn btn-sm btn-ghost magnetic-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg><span>GitHub</span></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="section-container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-tag">Expertise</span>
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <p class="section-subtitle">The tools and technologies I work with</p>
+                </div>
+                <div class="skills-grid animate-on-scroll">
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon html">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/>
+                            </svg>
+                        </div>
+                        <span class="skill-name">HTML5</span>
+                    </div>
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon css">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/>
+                            </svg>
+                        </div>
+                        <span class="skill-name">CSS3</span>
+                    </div>
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon js">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/>
+                            </svg>
+                        </div>
+                        <span class="skill-name">JavaScript</span>
+                    </div>
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon supabase">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M11.9 1.036c-.015-.986-1.26-1.41-1.874-.637L.764 12.05C-.033 13.002.618 14.467 1.835 14.467h6.508v8.497c0 .986 1.26 1.41 1.874.637l9.262-11.653c.797-.951.146-2.416-1.071-2.416h-6.508V1.036z"/>
+                            </svg>
+                        </div>
+                        <span class="skill-name">Supabase</span>
+                    </div>
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon realtime">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                                <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                                <line x1="12" y1="20" x2="12.01" y2="20"></line>
+                            </svg>
+                        </div>
+                        <span class="skill-name">Realtime</span>
+                    </div>
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon auth">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                        </div>
+                        <span class="skill-name">Auth</span>
+                    </div>
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon storage">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            </svg>
+                        </div>
+                        <span class="skill-name">Storage</span>
+                    </div>
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon uiux">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                            </svg>
+                        </div>
+                        <span class="skill-name">UI/UX</span>
+                    </div>
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon responsive">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                            </svg>
+                        </div>
+                        <span class="skill-name">Responsive</span>
+                    </div>
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon python">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2h4a4 4 0 0 1 4 4v3H8a4 4 0 0 0-4 4v0"/>
+                                <path d="M12 22H8a4 4 0 0 1-4-4v-3h12a4 4 0 0 0 4-4v0"/>
+                                <circle cx="15" cy="6" r="1" fill="currentColor"/>
+                                <circle cx="9" cy="18" r="1" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <span class="skill-name">Python</span>
+                    </div>
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon android">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="6" y="7" width="12" height="11" rx="2"></rect>
+                                <path d="M9 7 7.5 4.5"></path>
+                                <path d="M15 7 16.5 4.5"></path>
+                                <path d="M9 11h.01"></path>
+                                <path d="M15 11h.01"></path>
+                                <path d="M4 10v5"></path>
+                                <path d="M20 10v5"></path>
+                            </svg>
+                        </div>
+                        <span class="skill-name">Android Dev</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Currently Building Section -->
+        <section class="building" id="building">
+            <div class="section-container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-tag">In Progress</span>
+                    <h2 class="section-title">Currently Building</h2>
+                    <p class="section-subtitle">What I&apos;m working on right now</p>
+                </div>
+                <div class="building-grid">
+                    <div class="building-card glass-card animate-on-scroll tilt-card" data-delay="100">
+                        <div class="building-icon ai">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"></path>
+                                <circle cx="7.5" cy="14.5" r="1.5"></circle>
+                                <circle cx="16.5" cy="14.5" r="1.5"></circle>
+                            </svg>
+                        </div>
+                        <div class="building-content">
+                            <h3>AI Study Assistant</h3>
+                            <p>Building AI-powered tools that help students learn more effectively—smart flashcards, quiz generators, and concept explainers.</p>
+                            <div class="building-status">
+                                <div class="status-bar">
+                                    <div class="status-progress" style="width: 40%"></div>
+                                </div>
+                                <span>40% Complete</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="building-card glass-card animate-on-scroll tilt-card" data-delay="200">
+                        <div class="building-icon pen">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                                <path d="M2 2l7.586 7.586"></path>
+                                <circle cx="11" cy="11" r="2"></circle>
+                            </svg>
+                        </div>
+                        <div class="building-content">
+                            <h3>S Pen Note Beautifier</h3>
+                            <p>Exploring ways to take handwritten notes from Samsung S Pen and automatically enhance, organize, and digitize them.</p>
+                            <div class="building-status">
+                                <div class="status-bar">
+                                    <div class="status-progress" style="width: 15%"></div>
+                                </div>
+                                <span>Ideation Phase</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="building-card glass-card animate-on-scroll tilt-card" data-delay="300">
+                        <div class="building-icon edtech">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                            </svg>
+                        </div>
+                        <div class="building-content">
+                            <h3>EdTech Experiments</h3>
+                            <p>Various experiments in education technology—interactive simulations, gamified learning, and collaborative study spaces.</p>
+                            <div class="building-status">
+                                <div class="status-bar">
+                                    <div class="status-progress" style="width: 60%"></div>
+                                </div>
+                                <span>Ongoing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="section-container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-tag">Contact</span>
+                    <h2 class="section-title">Let&apos;s Connect</h2>
+                    <p class="section-subtitle">Have a project in mind or just want to chat? Reach out!</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info animate-on-scroll">
+                        <div class="contact-card glass-card">
+                            <h3>Get in touch</h3>
+                            <p>I&apos;m always excited to discuss new projects, creative ideas, or opportunities to be part of something amazing.</p>
+                            <div class="contact-links">
+                                <a href="mailto:dtverseofficial@gmail.com" class="contact-link magnetic-btn">
+                                    <div class="link-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                            <polyline points="22,6 12,13 2,6"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="link-content">
+                                        <span class="link-label">Email</span>
+                                        <span class="link-value">dtverseofficial@gmail.com</span>
+                                    </div>
+                                </a>
+                                <a href="https://github.com/devendra-tiwari" target="_blank" rel="noopener" class="contact-link magnetic-btn">
+                                    <div class="link-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="link-content">
+                                        <span class="link-label">GitHub</span>
+                                        <span class="link-value">@devendra-tiwari</span>
+                                    </div>
+                                </a>
+                                <a href="https://t.me/dtverse" target="_blank" rel="noopener" class="contact-link magnetic-btn">
+                                    <div class="link-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="link-content">
+                                        <span class="link-label">Telegram</span>
+                                        <span class="link-value">@dtverse</span>
+                                    </div>
+                                </a>
+
+                                <a href="https://instagram.com/devvv.ir" target="_blank" rel="noopener" class="contact-link magnetic-btn">
+                                    <div class="link-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="link-content">
+                                        <span class="link-label">Instagram</span>
+                                        <span class="link-value">@devvv.ir</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper animate-on-scroll">
+                        <form class="contact-form glass-card" id="contactForm" data-contact-email="dtverseofficial@gmail.com">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full magnetic-btn">
+                                <span>Send Message</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <p class="footer-text">Built under <strong>DTverse</strong> — chaos, caffeine & clean code.</p>
+                <p class="footer-year">&copy; 2026 DTverse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+<script src="buy-coffee.js"></script>
+</body>
+</html>
